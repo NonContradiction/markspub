@@ -64,5 +64,5 @@ if button_clicked:
 
 st.markdown("---")  # Optional horizontal rule
 
-st.markdown("ℹ️ You may need to double-click the button the first time. If you're on a computer, you should be able to use the enter/return key instead of the GUI.")
+st.markdown("ℹ️ You may need to double-click the button the first time. If you're on a computer, you should be able to use the enter/return key instead of the GUI (after clicking on it once).")
 st.markdown("𓂀𓋹𓁈𓃠𓆃☥𓆣")
