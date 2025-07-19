@@ -29,9 +29,9 @@ if "puzzle" not in st.session_state:
     st.session_state.show_answer = False
 
 # Title
-st.title("Welcome, Mark's Pub Friends! \n ❓≈🕊️")
+st.title("Welcome, Mark's Pub Friends!")
 
-st.markdown("# First Line of Title  \n# ❓≈🕊️")
+st.markdown("# ❓≈🕊️")
 
 # Puzzle prompt (always shown)
 st.markdown(f"🔍 **Question:** {st.session_state.puzzle['prompt']}")
