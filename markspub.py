@@ -17,8 +17,13 @@ def generate_puzzle():
     # here's how we randomly select a noun/pronoun
     ourchoice = random.choice(range(df.shape[0]))
 
+    if df.iloc[ourchoice, 4] == 'Singular':
+        beingverb = 'is'
+    else: 
+        beingverb = 'are'
+    
     return {
-        "prompt": f"What is/are {df.iloc[ourchoice, 2]}?",
+        "prompt": f"What {beingverb} {df.iloc[ourchoice, 2]}?",
         "answer": df.iloc[ourchoice, 3]
     }
 
