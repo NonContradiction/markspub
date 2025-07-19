@@ -18,7 +18,7 @@ def generate_puzzle():
     ourchoice = random.choice(range(df.shape[0]))
 
     return {
-        "prompt": f"What is {df.iloc[ourchoice, 2]}?",
+        "prompt": f"What is/are {df.iloc[ourchoice, 2]}?",
         "answer": df.iloc[ourchoice, 3]
     }
 
