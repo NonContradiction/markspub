@@ -18,7 +18,7 @@ def generate_puzzle():
     ourchoice = random.choice(range(df.shape[0]))
 
     return {
-        "prompt": f"What is '{df.iloc[ourchoice, 2]}'?",
+        "prompt": f"What is {df.iloc[ourchoice, 2]}?",
         "answer": df.iloc[ourchoice, 3]
     }
 
@@ -29,7 +29,7 @@ if "puzzle" not in st.session_state:
     st.session_state.show_answer = False
 
 # Title
-st.title("Welcome, Mark's Pub Friends! ❓≈🕊️")
+st.title("Welcome, Mark's Pub Friends! \n ❓≈🕊️")
 
 # Puzzle prompt (always shown)
 st.markdown(f"🔍 **Question:** {st.session_state.puzzle['prompt']}")
@@ -57,5 +57,5 @@ if button_clicked:
 
 st.markdown("---")  # Optional horizontal rule
 
-st.markdown("ℹ️ More Coptic words can be found here: https://coptic-dictionary.org/")
+st.markdown("ℹ️ You may need to double-click the button the first time.")
 st.markdown("𓂀𓋹𓁈𓃠𓆃☥𓆣")
