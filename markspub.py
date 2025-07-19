@@ -31,6 +31,8 @@ if "puzzle" not in st.session_state:
 # Title
 st.title("Welcome, Mark's Pub Friends! \n ❓≈🕊️")
 
+st.markdown("# First Line of Title  \n# ❓≈🕊️")
+
 # Puzzle prompt (always shown)
 st.markdown(f"🔍 **Question:** {st.session_state.puzzle['prompt']}")
 
