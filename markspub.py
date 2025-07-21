@@ -30,7 +30,7 @@ def generate_puzzle():
     else: 
         pronoun = 'Who'
 
-    df.iloc[ourchoice, 6] += 1
+    #df.iloc[ourchoice, 6] += 1
     
     return {
         "prompt": f"pronoun {beingverb} {df.iloc[ourchoice, 2]}?",
