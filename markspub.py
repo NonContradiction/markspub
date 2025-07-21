@@ -33,7 +33,7 @@ def generate_puzzle():
     #df.iloc[ourchoice, 6] += 1
     
     return {
-        "prompt": f"pronoun {beingverb} {df.iloc[ourchoice, 2]}?",
+        "prompt": f"{pronoun} {beingverb} {df.iloc[ourchoice, 2]}?",
         "answer": df.iloc[ourchoice, 3]
     }
 
