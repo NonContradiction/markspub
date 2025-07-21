@@ -33,6 +33,8 @@ def generate_puzzle():
     #df.iloc[ourchoice, 6] += 1
     
     return {
+        # TROUBLESHOOTING
+        "troubleshooting": f"{df.iloc[ourchoice, 5]}?",
         "prompt": f"{pronoun} {beingverb} {df.iloc[ourchoice, 2]}?",
         "answer": df.iloc[ourchoice, 3]
     }
@@ -56,6 +58,8 @@ answer_placeholder = st.empty()
 
 if st.session_state.show_answer:
     answer_placeholder.markdown(f"✅ **Answer:** {st.session_state.puzzle['answer']}")
+    # TROUBLESHOOTING
+    answer_placeholder.markdown(f"✅ **Troubleshooting:** {st.session_state.puzzle['troubleshooting']}")
 else:
     # Reserve space for layout consistency
     answer_placeholder.markdown("<div style='height: 42px'></div>", unsafe_allow_html=True)
