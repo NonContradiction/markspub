@@ -7,6 +7,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 df = pd.read_csv('MarksPub.csv')
+df['Tally'] = 0
 
 vocabdf = df[df['Type'].isin(['Vocab'])]
 factsdf = df[df['Type'].isin(['Fact'])]
@@ -15,15 +16,24 @@ factsdf = df[df['Type'].isin(['Fact'])]
 def generate_puzzle():
     # random choice 1
     # here's how we randomly select a noun/pronoun
-    ourchoice = random.choice(range(df.shape[0]))
+    # but only from the rows that we haven't seen yet
+    filtereddf = df[df['Tally']== min(df['Tally'])]
+    ourchoice = random.choice(filtereddf.index.tolist())
 
     if df.iloc[ourchoice, 4] == 'Singular':
         beingverb = 'is'
     else: 
         beingverb = 'are'
+
+    if df.iloc[ourchoice, 5] == 'No':
+        pronoun = 'What'
+    else: 
+        pronoun = 'Who'
+
+    df.iloc[ourchoice, 6] += 1
     
     return {
-        "prompt": f"What {beingverb} {df.iloc[ourchoice, 2]}?",
+        "prompt": f"pronoun {beingverb} {df.iloc[ourchoice, 2]}?",
         "answer": df.iloc[ourchoice, 3]
     }
 
@@ -36,7 +46,7 @@ if "puzzle" not in st.session_state:
 # Title
 st.title("Welcome, Mark's Pub Friends!")
 
-st.markdown("# ❓≈🕊️")
+st.markdown("# ❓≈🕊🇮🇱")
 
 # Puzzle prompt (always shown)
 st.markdown(f"🔍 **Question:** {st.session_state.puzzle['prompt']}")
