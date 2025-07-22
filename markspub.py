@@ -20,21 +20,21 @@ def generate_puzzle():
     filtereddf = df[df['Tally']== min(df['Tally'])]
     ourchoice = random.choice(filtereddf.index.tolist())
 
-    if df.iloc[ourchoice, 4] == 'Singular':
+    if df.iloc[ourchoice]['Number'] == 'Singular':
         beingverb = 'is'
     else: 
         beingverb = 'are'
 
-    if df.iloc[ourchoice, 5] == 'No':
+    if df.iloc[ourchoice]['Personal'] == 'No':
         pronoun = 'What'
     else: 
         pronoun = 'Who'
 
-    #df.iloc[ourchoice, 6] += 1
+    df.iloc[ourchoice]['Tally'] += 1
     
     return {
         # TROUBLESHOOTING
-        "troubleshooting": f"{df.iloc[ourchoice, 5]}?",
+        #"troubleshooting": f"{df.iloc[ourchoice, 5]}?",
         "prompt": f"{pronoun} {beingverb} {df.iloc[ourchoice, 2]}?",
         "answer": df.iloc[ourchoice, 3]
     }
@@ -58,8 +58,6 @@ answer_placeholder = st.empty()
 
 if st.session_state.show_answer:
     answer_placeholder.markdown(f"✅ **Answer:** {st.session_state.puzzle['answer']}")
-    # TROUBLESHOOTING
-    answer_placeholder.markdown(f"✅ **Troubleshooting:** {st.session_state.puzzle['troubleshooting']}")
 else:
     # Reserve space for layout consistency
     answer_placeholder.markdown("<div style='height: 42px'></div>", unsafe_allow_html=True)
