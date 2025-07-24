@@ -173,30 +173,30 @@
 ,Vocab,The 50 States,-,the current Governor of NH,Kelly Ayotte (R),Singular,No
 ,Fact,The 50 States,-,the US State with 4/4 Dem Congresspeople and a GOP Governor,NH,Singular,No
 ,Fact,The 50 States,-,"the County of Concord, NH",Merrimack,Singular,No
-,Fact,The 50 States,-,the Nashua-born singer-songwriter,"Amanda Leigh ""Mandy"" Moore (of Candy and Tangled)",Singular,No
+,Fact,The 50 States,-,the Nashua-born singer-songwriter,"Amanda Leigh ""Mandy"" Moore (of Candy and Tangled)",Singular,Yes
 ,Fact,The 50 States,-,the long NH river that partly determines their MA border,"the Merrimack (yes, the namesake of the eventual CSS Virginia)",Singular,No
-,Vocab,The 50 States,-,"the writer born and died in Concord NH, 1817-62",Henry David Thoreau,Singular,No
+,Vocab,The 50 States,-,"the writer born and died in Concord NH, 1817-62",Henry David Thoreau,Singular,Yes
 ,Vocab,The 50 States,-,the Alma Mater of Nathaniel Hawthorne & Franklin Pierce,Bowdoin (est. 1794),Singular,No
 ,Fact,The 50 States,-,the Alma Mater of RW Emerson and HD Thoreau,Harvard,Singular,No
 ,Vocab,The 50 States,-,the place in NH where they count votes early,Dixville Notch,Singular,No
-,Pavlov,The 50 States,-,the president born in NH,Franklin Pierce,Singular,No
-,Fact,The 50 States,-,the president who married Jane Appleton,Franklin Pierce,Singular,No
-,Fact,The 50 States,-,the President who signed the Gadsden Purchase,Franklin Pierce,Singular,No
+,Pavlov,The 50 States,-,the president born in NH,Franklin Pierce,Singular,Yes
+,Fact,The 50 States,-,the president who married Jane Appleton,Franklin Pierce,Singular,Yes
+,Fact,The 50 States,-,the President who signed the Gadsden Purchase,Franklin Pierce,Singular,Yes
 ,Fact,The 50 States,-,the effect of the Treaty of Mesilla,The Gadsden Purchase,Singular,No
-,Fact,The 50 States,-,the President who signed the Kansas-Nebrasaka Act of 1854,Franklin Pierce,Singular,No
-,Fact,The 50 States,-,the candidate defeated by Franklin Pierce,"Winfield ""Fuss n Feathers"" Scott",Singular,No
-,Vocab,The 50 States,-,Pierce's VP,William Rufus DeVane King,Singular,No
-,Fact,The 50 States,-,"the President with a VP named ""King""",Franklin Pierce,Singular,No
+,Fact,The 50 States,-,the President who signed the Kansas-Nebrasaka Act of 1854,Franklin Pierce,Singular,Yes
+,Fact,The 50 States,-,the candidate defeated by Franklin Pierce,"Winfield ""Fuss n Feathers"" Scott",Singular,Yes
+,Vocab,The 50 States,-,Pierce's VP,William Rufus DeVane King,Singular,Yes
+,Fact,The 50 States,-,"the President with a VP named ""King""",Franklin Pierce,Singular,Yes
 ,Fact,The 50 States,-,the Ostend Manifesto/Circular,the 1854 document from the Pierce Admin that wanted to buy Cuba from Spain and go to war if refused,Singular,No
-,Vocab,The 50 States,-,the African & Wampanoag-descended First Casualty of the American Revolution,Crispus Attucks,Singular,No
+,Vocab,The 50 States,-,the African & Wampanoag-descended First Casualty of the American Revolution,Crispus Attucks,Singular,Yes
 ,Vocab,The 50 States,-,the New England bowling variant,Candlepin bowling,Singular,No
 ,Fact,The 50 States,-,the company founded in NH by Dean Kamen in 1999,Segway (the founder is not the one who died),Singular,No
-,Fact,The 50 States,-,"the President who briefly made Lake Champlain a ""Great Lake"" legally",Clinton (1998),Singular,No
-,Vocab,The 50 States,-,"the famous resident of Bangor, ME who used to own radio stations",Stephen King,Singular,No
-,Fact,The 50 States,-,"the native of Lowell, MA who filmed Now, Voyager on location in Boston",Bette Davis,Singular,No
+,Fact,The 50 States,-,"the President who briefly made Lake Champlain a ""Great Lake"" legally",Clinton (1998),Singular,Yes
+,Vocab,The 50 States,-,"the famous resident of Bangor, ME who used to own radio stations",Stephen King,Singular,Yes
+,Fact,The 50 States,-,"the native of Lowell, MA who filmed Now, Voyager on location in Boston",Bette Davis,Singular,Yes
 ,Fact,The 50 States,-,"""Hi, Neighboor"" beer slogan",Narragansett Brewing,Singular,No
 ,Vocab,The 50 States,-,New England's largest estuary,Narragansett Bay,Singular,No
-,Fact,The 50 States,-,"the famous native of Winsted, CT",Ralph Nader,Singular,No
+,Fact,The 50 States,-,"the famous native of Winsted, CT",Ralph Nader,Singular,Yes
 ,Fact,The 50 States,-,Ralph Nader's mom's name,Rose,Singular,No
 ,Vocab,The 50 States,-,the eponymous restaurant in a 1988 film with Julia Roberts,Mystic Pizza,Singular,No
 ,Fact,The 50 States,-,the state where Mystic Pizza is set,CT (the town of Mystic),Singular,No
@@ -207,7 +207,7 @@
 ,Fact,The 50 States,-,the MA town that claims the Yellow Smiley Face,Worcester,Singular,No
 ,Fact,The 50 States,-,the CT seaport that's now home to the USS Nautilus,Groton CT,Singular,No
 ,Vocab,The 50 States,-,the Rodgers and Hammerstein musical based on Ferenc Molnar's Liliom,Carousel,Singular,No
-,Fact,The 50 States,-,the protagonist of Carousel,Julie,Singular,No
+,Fact,The 50 States,-,the protagonist of Carousel,Julie,Singular,Yes
 ,Fact,The 50 States,-,the Rodgers and Hammerstein musical set in Maine,Carousel,Singular,No
 ,Fact,The 50 States,-,the city where the source material for the musical Carousel set it,Budapest,Singular,No
 ,Fact,The 50 States,-,the VT company est. 1790 that did well during covid,King Arthur Flour,Singular,No
@@ -245,9 +245,9 @@
 ,Fact,The 50 States,-,the Presbyterian Ivy League,Princeton,Singular,No
 ,Fact,The 50 States,-,the longest river in New England,Connecticut (406 miles),Singular,No
 ,Fact,The 50 States,-,"the State named for the Mohegaan ""beside the long/tidal river""",CT,Singular,No
-,Vocab,The 50 States,-,the 1st White Man to chart the CT River,"Adriaen Block, Dutch, 1614",Singular,No
-,Vocab,The 50 States,-,the only poet to receive 4 Pulitzer Prizes,Robert Frost,Singular,No
-,Fact,The 50 States,-,the celeb who bought a mansion in Watch Hill RI in 2017,T Swift,Singular,No
+,Vocab,The 50 States,-,the 1st White Man to chart the CT River,"Adriaen Block, Dutch, 1614",Singular,Yes
+,Vocab,The 50 States,-,the only poet to receive 4 Pulitzer Prizes,Robert Frost,Singular,Yes
+,Fact,The 50 States,-,the celeb who bought a mansion in Watch Hill RI in 2017,T Swift,Singular,Yes
 ,Vocab,The 50 States,-,the term for the rear compartment of a lobster trap,the bedroom,Singular,No
 ,Vocab,The 50 States,-,the 2001 Maine-set film named after a lobster trap,In the Bedroom,Singular,No
 ,Vocab,The 50 States,-,the name of the Andre Dubus short story that the 2001 film In the Bedroom is based on,Killings,Singular,No
@@ -299,36 +299,36 @@
 ,Vocab,The 50 States,-,the current Governor of Wisconsin,Tony Evers,Singular,Yes
 ,Vocab,The 50 States,-,the current Governor of Wyoming,Mark Gordon,Singular,Yes
 ,Fact,The 50 States,-,the CT city that was once home to the world's largest trading floor,Stamford,Singular,No
-,Vocab,The 50 States,-,"the man who passed away in Prouts Neck, ME in 1910","Winslow Homer, painter",Singular,No
+,Vocab,The 50 States,-,"the man who passed away in Prouts Neck, ME in 1910","Winslow Homer, painter",Singular,Yes
 ,Fact,The 50 States,-,the rock band formed in Burlington VT in 1983,Phish,Singular,No
 ,Fact,The 50 States,-,"the tagline ""Vermont's Finest""",Phish Food,Singular,No
-,Vocab,The 50 States,-,"the man born in Great Barrington MA and who died in Accra, Ghana",WEB DuBois,Singular,No
+,Vocab,The 50 States,-,"the man born in Great Barrington MA and who died in Accra, Ghana",WEB DuBois,Singular,Yes
 ,Fact,The 50 States,-,WEB DuBois' single most famous book,The Souls of Black Folk,Singular,No
 ,Fact,The 50 States,-,the MA town that Dunkin is from,Quincy MA,Singular,No
 ,Fact,The 50 States,-,Sir Andre Geim's claim to fame,only man to win a Nobel and Ig Nobel Prize,Singular,No
 ,Fact,The 50 States,-,the U where the Ig Nobel prizes are handed out,MIT,Singular,No
 ,Fact,The 50 States,-,the CT city that's home to Philip Johnson's Glass House,New Canaan,Singular,No
 ,Fact,The 50 States,-,the company based in South Deerfield MA,Yankee Candle,Singular,No
-,Vocab,TV,-,Tony Soprano's daughter,Meadow,Singular,No
+,Vocab,TV,-,Tony Soprano's daughter,Meadow,Singular,Yes
 ,Vocab,The 50 States,-,the town in the play Our Town,Grover's Corners NH,Singular,No
 ,Fact,The 50 States,-,the sport with a HOF in Springfield MA,Basketball,Singular,No
 ,Fact,The 50 States,-,the sport with a HOF in Newport RI,Tennis,Singular,No
-,Vocab,The 50 States,-,"the famous son of Leominster, MA","John Chapman (""Johnny Appleseed"")",Singular,No
-,Vocab,The 50 States,-,"the author who lived in Dummerston, VT in the 1890's at a home he called Naulakha",Rudyard Kipling,Singular,No
-,Vocab,The 50 States,-,the Russian-born namesake of the Bridgeport CT municipal airport,(Igor) Sikorsky,Singular,No
+,Vocab,The 50 States,-,"the famous son of Leominster, MA","John Chapman (""Johnny Appleseed"")",Singular,Yes
+,Vocab,The 50 States,-,"the author who lived in Dummerston, VT in the 1890's at a home he called Naulakha",Rudyard Kipling,Singular,Yes
+,Vocab,The 50 States,-,the Russian-born namesake of the Bridgeport CT municipal airport,(Igor) Sikorsky,Singular,Yes
 ,Vocab,The 50 States,-,the footwear company based in Stratham NH,Timberland,Singular,No
-,Vocab,The 50 States,-,the mayor of Boston,Michelle Wu,Singular,No
-,Vocab,The 50 States,-,the MA member of the Squad in Congress,Ayanna Pressley,Singular,No
-,Vocab,The 50 States,-,the alias of Jason Momoa's Aquaman,Arthur Curry,Singular,No
+,Vocab,The 50 States,-,the mayor of Boston,Michelle Wu,Singular,Yes
+,Vocab,The 50 States,-,the MA member of the Squad in Congress,Ayanna Pressley,Singular,Yes
+,Vocab,The 50 States,-,the alias of Jason Momoa's Aquaman,Arthur Curry,Singular,Yes
 ,Fact,The 50 States,-,the river/city that’s been the annual home of WaterFire by Barnaby Evans since 1998,Providence,Singular,No
-,Fact,The 50 States,-,the Red Sox player who famously swore giving remarks after the 2013 Boston Marathon bombing,David Ortiz,Singular,No
-,Fact,The 50 States,-,"the guy credited for ""Boston Brahmins""",Oliver Wendell Holmes Sr. ,Singular,No
+,Fact,The 50 States,-,the Red Sox player who famously swore giving remarks after the 2013 Boston Marathon bombing,David Ortiz,Singular,Yes
+,Fact,The 50 States,-,"the guy credited for ""Boston Brahmins""",Oliver Wendell Holmes Sr. ,Singular,Yes
 ,Fact,The 50 States,-,Franklin Pierce's birthplace,Hillsborough NH,Singular,No
 ,Fact,The 50 States,-,Chester A Arthur's birthplace,Fairfield VT,Singular,No
 ,Fact,The 50 States,-,Coolidge's birthplace,Plymouth VT,Singular,No
 ,Vocab,The 50 States,-,JFK's birthplace,"Brookline MA, 1917",Singular,No
 ,Vocab,The 50 States,-,GHWB's birthplace,"Milton MA, 6/12/1924",Singular,No
-,Fact,The 50 States,-,the only President laid to rest in VT,Coolidge,Singular,No
+,Fact,The 50 States,-,the only President laid to rest in VT,Coolidge,Singular,Yes
 ,Fact,The 50 States,-,the state flower of NH,purple lilac,Singular,No
 ,Fact,The 50 States,-,the state tree of NH,white/paper birch,Singular,No
 ,Vocab,The 50 States,-,the state dog of NH,Chinook (really; a kind of sled dog),Singular,No
@@ -347,13 +347,13 @@
 ,Vocab,The 50 States,-,the famous boarding school in NH where Gore Vidal and John Irving et al went,Philips Exeter Academy,Singular,No
 ,Fact,The 50 States,-,Daniel Webster's birthplace,Salisbury NH,Singular,No
 ,Fact,The 50 States,-,the state that Daniel Webster repped in the US Senate,MA,Singular,No
-,Fact,The 50 States,-,the lawyer who argued and won McCulloch v. MD and Gibbons v. Ogden et al.,Daniel Webster,Singular,No
+,Fact,The 50 States,-,the lawyer who argued and won McCulloch v. MD and Gibbons v. Ogden et al.,Daniel Webster,Singular,Yes
 ,Vocab,The 50 States,-,the southern NH mountain cited as one of the world's most frequently climbed,Mt. Monadnock,Singular,No
-,Vocab,The 50 States,-,the American sculptor of the Lincoln Memorial who was born in Exeter NH,Daniel Chester French,Singular,No
+,Vocab,The 50 States,-,the American sculptor of the Lincoln Memorial who was born in Exeter NH,Daniel Chester French,Singular,Yes
 ,Fact,The 50 States,-,the first state to have a state lottery (est 1964),NH,Singular,No
-,Vocab,The 50 States,-,the writer whose father whom he never met was shot down over Burma in war,John Irving (born Blunt),Singular,No
-,Fact,The 50 States,-,the writer of The Hotel New Hampshire,John Irving (born Blunt),Singular,No
-,Vocab,The 50 States,-,the New Hampshire teacher with an asteroid named for her,Christa McAuliffe,Singular,No
+,Vocab,The 50 States,-,the writer whose father whom he never met was shot down over Burma in war,John Irving (born Blunt),Singular,Yes
+,Fact,The 50 States,-,the writer of The Hotel New Hampshire,John Irving (born Blunt),Singular,Yes
+,Vocab,The 50 States,-,the New Hampshire teacher with an asteroid named for her,Christa McAuliffe,Singular,Yes
 ,Fact,The 50 States,-,the state bird of NH,the purple finch,Singular,No
 ,Fact,The 50 States,-,the Canadian province where US Route 1 terminates,New Brunswick,Singular,No
 ,Fact,The 50 States,-,state that saw the undeclared Aroostook War,Maine,Singular,No
@@ -373,19 +373,19 @@
 ,Fact,The 50 States,-,the 1981 movie filmed at Squam Lake in NH,On Golden Pond,Singular,No
 ,Fact,Literature,-,the name of the titular celebrated jumping frog of Calaveras County in Twain's story,"Daniel ""Dan'l"" Webster",Singular,No
 ,Vocab,Literature,-,William Faulkner's home estate,Rowan Oak,Singular,No
-,Vocab,The 50 States,-,the woman born in Bow NH in 1821,Mary Baker Eddy,Singular,No
-,Fact,The 50 States,-,the religious founder who had a house called Pleasant View in Concord NH,Mary Baker Eddy,Singular,No
+,Vocab,The 50 States,-,the woman born in Bow NH in 1821,Mary Baker Eddy,Singular,Yes
+,Fact,The 50 States,-,the religious founder who had a house called Pleasant View in Concord NH,Mary Baker Eddy,Singular,Yes
 ,Fact,The 50 States,-,NH's 4th-most populous city which is where potatoes were first cultivated in Britain's colonies,Derry (as in Ireland),Singular,No
-,Vocab,The 50 States,-,the first man to sign the Declaration after John Hancock,Josiah Bartlett,Singular,No
+,Vocab,The 50 States,-,the first man to sign the Declaration after John Hancock,Josiah Bartlett,Singular,Yes
 ,Fact,The 50 States,-,the state whose DOI signers are Josiah Bartlett; William Whipple; and Matthew Thornton,NH,Singular,No
 ,Vocab,The 50 States,-,the DC neighborhood named for the traffic circle where CT MA and NH avenues meet,DuPont Circle,Singular,No
 ,Vocab,The 50 States,-,the NH place where the IMF was formed at a 1944 conference,Bretton Woods,Singular,No
-,Fact,The 50 States,-,"the British ""baron"" who traveled to Bretton Woods in 1944",J M Keynes,Singular,No
+,Fact,The 50 States,-,"the British ""baron"" who traveled to Bretton Woods in 1944",J M Keynes,Singular,Yes
 ,Vocab,The 50 States,-,John Irving's 1981 novel and 1984 Beau Bridges film,The Hotel New Hampshire,Singular,No
 ,Fact,The 50 States,-,"the nation's first ""primary"" (not caucus)",NH,Singular,No
 ,Fact,The 50 States,-,the primary that gave Clinton the Comback Kid moniker,NH,Singular,No
-,Fact,The 50 States,-,the 1st president born in the Nineteenth Century,Franklin Pierce--1804,Singular,No
-,Fact,The 50 States,-,the 1st President born in the 1800's,Millard Fillmore--1800,Singular,No
+,Fact,The 50 States,-,the 1st president born in the Nineteenth Century,Franklin Pierce--1804,Singular,Yes
+,Fact,The 50 States,-,the 1st President born in the 1800's,Millard Fillmore--1800,Singular,Yes
 ,Fact,The 50 States,-,the city that's the most populous in its state and that used to be named Harrytown and then Derryfield,Manchester,Singular,No
 ,Fact,The 50 States,-,the year that NH was cleaved from MA,1741,Singular,No
 ,Deep Cut,The 50 States,-,Mr. Rogers' alma mater,Dartmouth in NH,Singular,No
@@ -396,7 +396,7 @@
 ,Fact,The 50 States,-,the only Maine college attended by a POTUS,Bowdoin by Pierce,Singular,No
 ,Fact,The 50 States,-,the western stagecoach named for an eastern state capital,Concord,Singular,No
 ,Fact,The 50 States,-,the war ended by a treaty that was ACTUALLY signed in Kittery ME,Russo-Japanese War,Singular,No
-,Fact,The 50 States,-,the 2 state capitals whose names start and end with the same letter,Augusta; Atlanta,Singular,No
+,Fact,The 50 States,-,the 2 state capitals whose names start and end with the same letter,Augusta; Atlanta,Plural,No
 ,Fact,The 50 States,-,the geographic name for some land in Kennebunkport ME,Walker's Point,Singular,No
 ,Fact,The 50 States,-,the writer who was married to Mary Potter and then Frances Appleton,Henry Wadsworth Longfellow,Singular,No
 ,Vocab,The 50 States,-,the author born in 1807 in Portland-then-Massachusetts,Henry Wadsworth Longfellow,Singular,No
@@ -411,37 +411,37 @@
 ,Deep Cut,The 50 States,-,the Underground Railroad's foreign-sounding church in Portland ME,Abyssinian Meeting House,Singular,No
 ,Vocab,The 50 States,-,the home of Bates College,Lewiston Maine,Singular,No
 ,Fact,The 50 States,-,Maine's Big Three,Bates-Colby-Bowdoin,Singular,No
-,Vocab,The 50 States,-,"the famous 4-named, 3-termed US Senator from Maine and ""Mother of the Waves"" (1949-73)",Margaret Chase Smith,Singular,No
-,Vocab,The 50 States,-,the US Senator from Maine who lost the 1884 election to Cleveland,James G. Blaine,Singular,No
+,Vocab,The 50 States,-,"the famous 4-named, 3-termed US Senator from Maine and ""Mother of the Waves"" (1949-73)",Margaret Chase Smith,Singular,Yes
+,Vocab,The 50 States,-,the US Senator from Maine who lost the 1884 election to Cleveland,James G. Blaine,Singular,Yes
 ,Fact,The 50 States,-,the cabinet position that James G. Blaine held for 2 terms,Sec-State (for JAG; CAA; and…BH),Singular,No
-,Vocab,The 50 States,-,the first Republican woman to win a 5th term in the Senate,"Susan ""Concerned"" Collins",Singular,No
+,Vocab,The 50 States,-,the first Republican woman to win a 5th term in the Senate,"Susan ""Concerned"" Collins",Singular,Yes
 ,Fact,The 50 States,-,"the newspaper whose cartoon caption coined ""Remember the Maine""",The Washington Post,Singular,No
 ,Deep Cut,The 50 States,-,Portland ME's famous charming street,Wharf street,Singular,No
 ,Fact,The 50 States,-,the novel set in Ludlow ME,Pet Sematary,Singular,No
 ,Vocab,The 50 States,-,the name of Maine's mountain with a ski resort and a … familiar name,Sugarloaf Mountain,Singular,No
-,Vocab,The 50 States,-,the Maine Senator who served as VP,Hannibal Hamlin,Singular,No
+,Vocab,The 50 States,-,the Maine Senator who served as VP,Hannibal Hamlin,Singular,Yes
 ,Fact,The 50 States,-,the home of Moose Point State Park,Maine,Singular,No
 ,Fact,The 50 States,-,the least densely populated state east of the Mississippi,Maine,Singular,No
 ,Fact,The 50 States,-,the state flower of Maine,a cone from the pine tree (really),Singular,No
 ,Fact,The 50 States,-,the animal named Homarus americanus,lobster,Singular,No
 ,Fact,The 50 States,-,the hometown of Loren Coleman's International Cryptozoology Museum,Portland ME,Singular,No
 ,Vocab,The 50 States,-,the famous children's book of Patricia MacLachlan,Sarah Plain and Tall (1985),Singular,No
-,Vocab,The 50 States,-,the Pulitzer-winning Portland ME-born and raised woman writer,Elizabeth Strout,Singular,No
+,Vocab,The 50 States,-,the Pulitzer-winning Portland ME-born and raised woman writer,Elizabeth Strout,Singular,Yes
 ,Fact,The 50 States,-,the debut novel (1998) of Elizabeth Strout,Amy & Isabelle (later a movie with Elizabeth Shue),Singular,No
 ,Vocab,The 50 States,-,the Elizabeth Strout novel/short story cycle from 2008 that won her the Pulitzer,Olive Kitteridge--set in fictional Crosby ME,Singular,No
 ,Fact,The 50 States,-,the fictional setting for most of Elizabeth Strout's fiction,Shirley Falls ME,Singular,No
-,Fact,The 50 States,-,the first woman to serve in both Houses of Congress,Margaret Chase Smith (R-ME),Singular,No
-,Fact,The 50 States,-,the US Senator from Maine on Nixon's enemies list,Edmund Muskie,Singular,No
+,Fact,The 50 States,-,the first woman to serve in both Houses of Congress,Margaret Chase Smith (R-ME),Singular,Yes
+,Fact,The 50 States,-,the US Senator from Maine on Nixon's enemies list,Edmund Muskie,Singular,Yes
 ,Vocab,The 50 States,-,the fictional New England town where Once Upon A Time is set,Storybrooke ME,Singular,No
 ,Deep Cut,The 50 States,-,the Alma Mater of Stephen King,U of Maine,Singular,No
 ,Fact,The 50 States,-,the state where Misery is set,Colorado,Singular,No
-,Vocab,The 50 States,-,the Pulitzer-winning poetess born in Rockland ME,Edna St. Vincent Millay,Singular,No
-,Vocab,The 50 States,-,the Penobscot baseball player,Louis Sockalexis,Singular,No
-,Vocab,The 50 States,-,the Penobscot chief and town namesake,Orono,Singular,No
+,Vocab,The 50 States,-,the Pulitzer-winning poetess born in Rockland ME,Edna St. Vincent Millay,Singular,Yes
+,Vocab,The 50 States,-,the Penobscot baseball player,Louis Sockalexis,Singular,Yes
+,Vocab,The 50 States,-,the Penobscot chief and town namesake,Orono,Singular,Yes
 ,Deep Cut,The 50 States,-,"the ""most photographed house in the state of Maine"" in Kennebunkport's nickname",the Wedding Cake House,Singular,No
 ,Vocab,The 50 States,-,the TV show set in the fictional Collinsport ME (1966-71),Dark Shadows (a Gothic soap opera),Singular,No
-,Fact,The 50 States,-,the US Senator from Maine who was Sec-Def as the only Republican in Clinton's Cabinet,William Cohen,Singular,No
-,Deep Cut,The 50 States,-,the US Senator who helped broker peace in Northern Ireland in 1998,George Mitchell,Singular,No
+,Fact,The 50 States,-,the US Senator from Maine who was Sec-Def as the only Republican in Clinton's Cabinet,William Cohen,Singular,Yes
+,Deep Cut,The 50 States,-,the US Senator who helped broker peace in Northern Ireland in 1998,George Mitchell,Singular,Yes
 ,Vocab,The 50 States,-,the fictitious setting of Murder She Wrote (1984-96),Cabot Cove ME,Singular,No
 ,Fact,The 50 States,-,the easternmost US State capital,Augusta,Singular,No
 ,Fact,The 50 States,-,the birthplace of Hannibal Hamlin,Paris ME,Singular,No
@@ -449,7 +449,7 @@
 ,Vocab,The 50 States,-,the sequel to the novel Sarah Plain and Tall,Skylark,Singular,No
 ,Fact,The 50 States,-,the first state to ban the sale of alcohol (1851),Maine,Singular,No
 ,Vocab,The 50 States,-,the cinematic animal that Rockport ME is known for,Andre the seal,Singular,No
-,Fact,The 50 States,-,the titular art subject whose surname is Olson,Christina (of Christina's World),Singular,No
+,Fact,The 50 States,-,the titular art subject whose surname is Olson,Christina (of Christina's World),Singular,Yes
 ,Fact,The 50 States,-,the state HBS wrote Uncle Tom's Cabin in,Maine,Singular,No
 ,Fact,Geography,-,the easternmost point on mainland Asia,Cape Dezhnev in the Bering Strait,Singular,No
 ,Fact,The 50 States,-,the animal on the state flag of Maine,Moose (Alces alces),Singular,No
