@@ -35,8 +35,8 @@ def generate_puzzle():
     return {
         # TROUBLESHOOTING
         #"troubleshooting": f"{df.iloc[ourchoice, 5]}?",
-        "prompt": f"{pronoun} {beingverb} {df.iloc[ourchoice, 2]}?",
-        "answer": df.iloc[ourchoice, 3]
+        "prompt": f"{pronoun} {beingverb} {df.iloc[ourchoice]['Question']}?",
+        "answer": df.iloc[ourchoice]['Answer']
     }
 
 
