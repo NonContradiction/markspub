@@ -51,7 +51,7 @@ st.title("Welcome, Mark's Pub Friends!")
 st.markdown("# ❓≈🕊🇮🇱")
 
 # Puzzle prompt (always shown)
-st.markdown(f"We've got {df.shape[0]} many different rows of trivia.")
+st.markdown(f"We've got {df.shape[0]} different trivia questions.")
 
 # Puzzle prompt (always shown)
 st.markdown(f"🔍 **Question:** {st.session_state.puzzle['prompt']}")
