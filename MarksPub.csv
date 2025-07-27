@@ -621,14 +621,14 @@
 3,Discrete Facts,Nations of the World,Japan,the first Japanese luxury car division,Acura (of Honda),Singular,No
 3,Discrete Facts,Nations of the World,Japan,the Johnny come lately of Japanese car manufacturers being est. 1953,Subaru,Singular,No
 3,Summary Lists,Nations of the World,Japan,the 4 main Japanese motorcycle makers,SHaKY: Suzuki Honda Kawasaki Yamaha,Plural,No
-3,Discrete Facts,Nations of the World,Japan,a Japanese motorcycle maker and musical instrument maker,Yamaha,Singular,No
-3,Discrete Facts,Nations of the World,Japan,a Japanese motorcycle maker and a character in Madame Butterfly (or You Only Live Twice),Suzuki,Singular,No
+3,Intersections,Nations of the World,Japan,a Japanese motorcycle maker and musical instrument maker,Yamaha,Singular,No
+3,Intersections,Nations of the World,Japan,a Japanese motorcycle maker and a character in Madame Butterfly (or You Only Live Twice),Suzuki,Singular,No
 3,Discrete Facts,Nations of the World,Japan,the Japanese est. 1887 as Nippon Gakki company,Yamaha,Singular,No
 3,Discrete Facts,Nations of the World,Japan,"the motorcycle maker whose models begin ""YZ""",Yamaha,Singular,No
 3,Discrete Facts,Nations of the World,Japan,"the player of the ""Million Dollar Piano"" made by Yamaha",Elton John (at Caesars Palace),Singular,Yes
 3,Discrete Facts,Nations of the World,Japan,the maker of the synthesizer used in the Bladerunner movies,Yamaha,Singular,No
 3,Discrete Facts,Nations of the World,Japan,the film scorers for the 2 Bladerunner films,Vangelis; Hans Zimmer,Plural,Yes
-3,Discrete Facts,Nations of the World,Japan,a Japanese motorcycle maker and a city between Tokyo and Yokohama,Kawasaki,Singular,No
+3,Intersections,Nations of the World,Japan,a Japanese motorcycle maker and a city between Tokyo and Yokohama,Kawasaki,Singular,No
 3,Discrete Facts,Nations of the World,Japan,"the Japanese motorcycle maker known for the slogan ""let the good times roll""",Kawasaki,Singular,No
 3,Discrete Facts,Nations of the World,Japan,the manufacturer of the Gold Wing motorcycle,Honda,Singular,No
 3,Discrete Facts,Nations of the World,Japan,the company est. 1889 to make Hanafuda trading cards,Nintendo (yes really),Singular,No
@@ -726,7 +726,7 @@
 3,Discrete Facts,Nations of the World,Japan,the port city in the Yellow Sea between the Bohai Sea and Korea Bay,Port Arthur nowadays Lushun,Singular,No
 3,Discrete Facts,Nations of the World,Japan,"""Operation Z""",the Pearl Harbor attack,Singular,No
 3,Discrete Facts,Nations of the World,Japan,the only battleship that got underway to attack on 12/7/1941,Nevada,Singular,No
-3,Discrete Facts,Nations of the World,Japan,the only battleship present at Pearl Harbor and also Normandy,Nevada,Singular,No
+3,Intersections,Nations of the World,Japan,the only battleship present at Pearl Harbor and also Normandy,Nevada,Singular,No
 3,Discrete Facts,Nations of the World,Japan,the battleship that sank en route to repair post Pearl Harbor,Oklahoma,Singular,No
 1,Discrete Facts,Nations of the World,Japan,the Admiral who planned Pearl Harbor and was later shot down over New Guinea,Yamamoto,Singular,No
 3,Discrete Facts,Nations of the World,Japan,the phrase attributed spuriously to Admiral Yamamoto about America,"""sleeping giant""",Singular,No
