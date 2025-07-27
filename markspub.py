@@ -55,9 +55,6 @@ st.write("Select one or more options for the type of questions you want included
 
 options = ["Discrete Facts", "Vocab Refreshers", "Summary Lists", 
            "Intersections", "Pavlovs", "Deep Cuts"]
-# Create one column per checkbox to save space
-cols = st.columns(len(options))
-
 selected = []
 cols_per_row = 3
 
