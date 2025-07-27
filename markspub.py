@@ -31,9 +31,16 @@ for i in range(0, len(options), cols_per_row):
 # but only from the rows that we haven't seen yet
 filtereddf = df[df['Tally']== min(df['Tally'])]
 
+selected = []
+cols_per_row = 3
+
 for i in range(0, len(options), cols_per_row):
-    if st.checkbox(option, value=True, key=option[i]):
-        selected.append(option[i])
+    cols = st.columns(cols_per_row)
+    for j, option in enumerate(options[i:i+cols_per_row]):
+        key = f"{option}_{i}_{j}"  # Make sure the key is unique
+        if cols[j].checkbox(option, value=True, key=key):
+            selected.append(option)
+
 try:
     filtereddf = filtereddf[filtereddf['Type'].isin(selected)]    
 except NameError:
