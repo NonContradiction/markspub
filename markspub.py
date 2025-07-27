@@ -44,6 +44,8 @@ def generate_puzzle():
     # random choice 1
     # here's how we randomly select a noun/pronoun
 
+    # but only from the rows that we haven't seen yet
+    filtereddf = filtereddf[filtereddf['Tally']== min(df['Tally'])]
     ourchoice = random.choice(filtereddf.index.tolist())
 
     if df.iloc[ourchoice]['Number'] == 'Singular':
