@@ -62,9 +62,12 @@ options = ["Discrete Facts", "Vocab Refreshers", "Summary Lists",
 cols = st.columns(len(options))
 
 selected = []
-for i, option in enumerate(options):
-    if cols[i].checkbox(option, value=True):
-        selected.append(option)
+cols_per_row = 3
+
+for i in range(0, len(options), cols_per_row):
+    cols = st.columns(cols_per_row)
+    for j, option in enumerate(options[i:i+cols_per_row]):
+        cols[j].checkbox(option, value=True, key=option)
 
 # Puzzle prompt (always shown)
 st.markdown(f"🔍 **Question:** {st.session_state.puzzle['prompt']}")
