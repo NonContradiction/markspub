@@ -18,6 +18,7 @@ def generate_puzzle():
     # here's how we randomly select a noun/pronoun
     # but only from the rows that we haven't seen yet
     filtereddf = df[df['Tally']== min(df['Tally'])]
+    filtereddf = filtereddf[filtereddf['Type'].isin(selected)]
     ourchoice = random.choice(filtereddf.index.tolist())
 
     if df.iloc[ourchoice]['Number'] == 'Singular':
@@ -33,8 +34,6 @@ def generate_puzzle():
     df.iloc[ourchoice]['Tally'] += 1
     
     return {
-        # TROUBLESHOOTING
-        #"troubleshooting": f"{df.iloc[ourchoice, 5]}?",
         "prompt": f"{pronoun} {beingverb} {df.iloc[ourchoice]['Question']}?",
         "answer": df.iloc[ourchoice]['Answer']
     }
@@ -47,9 +46,7 @@ if "puzzle" not in st.session_state:
 
 # Title
 st.title("Welcome, Mark's Pub Friends!")
-
 st.markdown("# ❓≈🕊🇮🇱")
-
 # Puzzle prompt (always shown)
 st.markdown(f"We've got {df.shape[0]} total different trivia questions.")
 
@@ -57,7 +54,6 @@ st.write("Select one or more options for the type of questions you want included
 
 options = ["Discrete Facts", "Vocab Refreshers", "Summary Lists", 
            "Intersections", "Pavlovs", "Deep Cuts"]
-
 # Create one column per checkbox to save space
 cols = st.columns(len(options))
 
@@ -69,6 +65,9 @@ for i in range(0, len(options), cols_per_row):
     for j, option in enumerate(options[i:i+cols_per_row]):
         cols[j].checkbox(option, value=True, key=option)
 
+if st.checkbox(option, value=True, key=option):
+    selected.append(option)
+    
 # Puzzle prompt (always shown)
 st.markdown(f"🔍 **Question:** {st.session_state.puzzle['prompt']}")
 
