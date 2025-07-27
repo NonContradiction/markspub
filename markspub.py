@@ -6,19 +6,67 @@ import random
 import warnings
 warnings.filterwarnings('ignore')
 
-df = pd.read_csv('MarksPub.csv')
-df['Tally'] = 0
+# Only load the CSV once into session state
+if "df" not in st.session_state:
+    st.session_state.df = pd.read_csv("MarksPub.csv")
+    st.session_state.df["Tally"] = 0
+df = st.session_state.df  # Use local variable for convenience
 
-vocabdf = df[df['Type'].isin(['Vocab'])]
-factsdf = df[df['Type'].isin(['Fact'])]
+# Title
+st.title("Welcome, Mark's Pub Friends!")
+st.markdown("# ❓≈🕊🇮🇱")
+# Puzzle prompt (always shown)
+st.markdown(f"We've got {df.shape[0]} total different trivia questions.")
 
+st.write("Select one or more options for the type of questions you want included:")
+
+options = ["Discrete Facts", "Vocab Refreshers", "Summary Lists", 
+           "Intersections", "Pavlovs", "Deep Cuts"]
+
+# but only from the rows that we haven't seen yet
+#filtereddf = df[df['Tally']== min(df['Tally'])]
+
+selected = []
+cols_per_row = 3
+
+for i in range(0, len(options), cols_per_row):
+    cols = st.columns(cols_per_row)
+    for j, option in enumerate(options[i:i+cols_per_row]):
+        key = f"{option}_{i}_{j}"  # Make sure the key is unique
+        if cols[j].checkbox(option, value=True, key=key):
+            selected.append(option)
+
+#try:
+#    filtereddf = filtereddf[filtereddf['Type'].isin(selected)]    
+#except NameError:
+#    pass
+        
 # Sample word generator (replace with your own logic)
 def generate_puzzle():
     # random choice 1
     # here's how we randomly select a noun/pronoun
-    # but only from the rows that we haven't seen yet
-    filtereddf = df[df['Tally']== min(df['Tally'])]
+    filtereddf = df[df['Type'].isin(selected)]  # First filter by category
+
+    if filtereddf.empty:
+    # fallback to full df or warn user
+        st.warning("No rows match the selected categories.")
+        st.stop()
+
+    # Compute minimum Tally within the filtered set
+    min_tally = filtereddf['Tally'].min()
+
+    # Now filter again to just those with min Tally
+    filtereddf = filtereddf[filtereddf['Tally'] == min_tally]
+
+    if filtereddf.empty:
+        st.warning("No rows with minimum Tally found in selected categories.")
+        st.stop()
+
+    # Choose one of those at random
     ourchoice = random.choice(filtereddf.index.tolist())
+
+    # Update Tally in the original df
+    df.at[ourchoice, 'Tally'] += 1
 
     if df.iloc[ourchoice]['Number'] == 'Singular':
         beingverb = 'is'
@@ -33,26 +81,17 @@ def generate_puzzle():
     df.iloc[ourchoice]['Tally'] += 1
     
     return {
-        # TROUBLESHOOTING
-        #"troubleshooting": f"{df.iloc[ourchoice, 5]}?",
         "prompt": f"{pronoun} {beingverb} {df.iloc[ourchoice]['Question']}?",
-        "answer": df.iloc[ourchoice]['Answer']
+        "answer": df.iloc[ourchoice]['Answer'], 
+        "tally": df.at[ourchoice, 'Tally']
     }
-
 
 # Initialize session state
 if "puzzle" not in st.session_state:
     st.session_state.puzzle = generate_puzzle()
     st.session_state.show_answer = False
 
-# Title
-st.title("Welcome, Mark's Pub Friends!")
-
-st.markdown("# ❓≈🕊🇮🇱")
-
-# Puzzle prompt (always shown)
-st.markdown(f"We've got {df.shape[0]} different trivia questions.")
-
+    
 # Puzzle prompt (always shown)
 st.markdown(f"🔍 **Question:** {st.session_state.puzzle['prompt']}")
 
