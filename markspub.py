@@ -22,7 +22,7 @@ options = ["Discrete Facts", "Vocab Refreshers", "Summary Lists",
            "Intersections", "Pavlovs", "Deep Cuts"]
 
 # but only from the rows that we haven't seen yet
-filtereddf = df[df['Tally']== min(df['Tally'])]
+#filtereddf = df[df['Tally']== min(df['Tally'])]
 
 selected = []
 cols_per_row = 3
@@ -34,21 +34,25 @@ for i in range(0, len(options), cols_per_row):
         if cols[j].checkbox(option, value=True, key=key):
             selected.append(option)
 
-try:
-    filtereddf = filtereddf[filtereddf['Type'].isin(selected)]    
-except NameError:
-    pass
+#try:
+#    filtereddf = filtereddf[filtereddf['Type'].isin(selected)]    
+#except NameError:
+#    pass
         
 # Sample word generator (replace with your own logic)
 def generate_puzzle():
     # random choice 1
     # here's how we randomly select a noun/pronoun
-
+    try:
+        filtereddf = df[df['Type'].isin(selected)]    
+    except NameError:
+        pass
     # but only from the rows that we haven't seen yet
     try: 
         filtereddf = filtereddf[filtereddf['Tally']== min(df['Tally'])]
     except UnboundLocalError:
         pass
+               
     try: 
         ourchoice = random.choice(filtereddf.index.tolist())
     except UnboundLocalError:
