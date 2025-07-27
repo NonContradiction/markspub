@@ -63,8 +63,8 @@ for i in range(0, len(options), cols_per_row):
     for j, option in enumerate(options[i:i+cols_per_row]):
         cols[j].checkbox(option, value=True, key=option)
 
-if st.checkbox(option, value=True, key=option):
-    selected.append(option)
+        if st.checkbox(option, value=True, key=option):
+            selected.append(option)
     
 # Puzzle prompt (always shown)
 st.markdown(f"🔍 **Question:** {st.session_state.puzzle['prompt']}")
