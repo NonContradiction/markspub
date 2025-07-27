@@ -6,9 +6,11 @@ import random
 import warnings
 warnings.filterwarnings('ignore')
 
-df = pd.read_csv('MarksPub.csv')
-
-df['Tally'] = 0
+# Only load the CSV once into session state
+if "df" not in st.session_state:
+    st.session_state.df = pd.read_csv("MarksPub.csv")
+    st.session_state.df["Tally"] = 0
+df = st.session_state.df  # Use local variable for convenience
 
 # Title
 st.title("Welcome, Mark's Pub Friends!")
