@@ -7,10 +7,8 @@ import warnings
 warnings.filterwarnings('ignore')
 
 df = pd.read_csv('MarksPub.csv')
-df['Tally'] = 0
 
-vocabdf = df[df['Type'].isin(['Vocab'])]
-factsdf = df[df['Type'].isin(['Fact'])]
+df['Tally'] = 0
 
 # Sample word generator (replace with your own logic)
 def generate_puzzle():
@@ -18,7 +16,11 @@ def generate_puzzle():
     # here's how we randomly select a noun/pronoun
     # but only from the rows that we haven't seen yet
     filtereddf = df[df['Tally']== min(df['Tally'])]
-    filtereddf = filtereddf[filtereddf['Type'].isin(selected)]
+    try:
+        filtereddf = filtereddf[filtereddf['Type'].isin(selected)]    
+    except NameError:
+        pass
+        
     ourchoice = random.choice(filtereddf.index.tolist())
 
     if df.iloc[ourchoice]['Number'] == 'Singular':
@@ -37,7 +39,6 @@ def generate_puzzle():
         "prompt": f"{pronoun} {beingverb} {df.iloc[ourchoice]['Question']}?",
         "answer": df.iloc[ourchoice]['Answer']
     }
-
 
 # Initialize session state
 if "puzzle" not in st.session_state:
