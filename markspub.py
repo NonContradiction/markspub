@@ -43,20 +43,28 @@ for i in range(0, len(options), cols_per_row):
 def generate_puzzle():
     # random choice 1
     # here's how we randomly select a noun/pronoun
-    try:
-        filtereddf = df[df['Type'].isin(selected)]    
-    except NameError:
-        pass
-    # but only from the rows that we haven't seen yet
-    try: 
-        filtereddf = filtereddf[filtereddf['Tally']== min(filtereddf['Tally'])]
-    except UnboundLocalError:
-        pass
-               
-    try: 
-        ourchoice = random.choice(filtereddf.index.tolist())
-    except UnboundLocalError:
-        ourchoice = random.choice(df.index.tolist())
+    filtereddf = df[df['Type'].isin(selected)]  # First filter by category
+
+    if filtereddf.empty:
+    # fallback to full df or warn user
+        st.warning("No rows match the selected categories.")
+        st.stop()
+
+    # Compute minimum Tally within the filtered set
+    min_tally = filtereddf['Tally'].min()
+
+    # Now filter again to just those with min Tally
+    filtereddf = filtereddf[filtereddf['Tally'] == min_tally]
+
+    if filtereddf.empty:
+        st.warning("No rows with minimum Tally found in selected categories.")
+        st.stop()
+
+    # Choose one of those at random
+    ourchoice = random.choice(filtereddf.index.tolist())
+
+    # Update Tally in the original df
+    df.at[ourchoice, 'Tally'] += 1
 
     if df.iloc[ourchoice]['Number'] == 'Singular':
         beingverb = 'is'
