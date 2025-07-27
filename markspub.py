@@ -49,8 +49,10 @@ def generate_puzzle():
         filtereddf = filtereddf[filtereddf['Tally']== min(df['Tally'])]
     except UnboundLocalError:
         pass
-
-    ourchoice = random.choice(filtereddf.index.tolist())
+    try: 
+        ourchoice = random.choice(filtereddf.index.tolist())
+    except UnboundLocalError:
+        ourchoice = random.choice(df.index.tolist())
 
     if df.iloc[ourchoice]['Number'] == 'Singular':
         beingverb = 'is'
