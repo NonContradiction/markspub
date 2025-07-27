@@ -51,7 +51,24 @@ st.title("Welcome, Mark's Pub Friends!")
 st.markdown("# ❓≈🕊🇮🇱")
 
 # Puzzle prompt (always shown)
-st.markdown(f"We've got {df.shape[0]} different trivia questions.")
+st.markdown(f"We've got {df.shape[0]} total different trivia questions.")
+
+st.write("Select one or more options for the type of questions you want included:")
+
+option_a = st.checkbox("Discrete Facts")
+option_b = st.checkbox("Vocab Refreshers")
+option_c = st.checkbox("Summary Lists")
+option_d = st.checkbox("Intersections")
+option_e = st.checkbox("Pavlovs")
+option_f = st.checkbox("Deep Cuts")
+
+selected = []
+if option_a: selected.append("Option A")
+if option_b: selected.append("Option B")
+if option_c: selected.append("Option C")
+if option_d: selected.append("Option D")
+if option_e: selected.append("Option E")
+if option_f: selected.append("Option F")
 
 # Puzzle prompt (always shown)
 st.markdown(f"🔍 **Question:** {st.session_state.puzzle['prompt']}")
