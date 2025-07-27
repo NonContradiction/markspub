@@ -20,13 +20,6 @@ st.write("Select one or more options for the type of questions you want included
 
 options = ["Discrete Facts", "Vocab Refreshers", "Summary Lists", 
            "Intersections", "Pavlovs", "Deep Cuts"]
-selected = []
-cols_per_row = 3
-
-for i in range(0, len(options), cols_per_row):
-    cols = st.columns(cols_per_row)
-    for j, option in enumerate(options[i:i+cols_per_row]):
-        cols[j].checkbox(option, value=True, key=option)
 
 # but only from the rows that we haven't seen yet
 filtereddf = df[df['Tally']== min(df['Tally'])]
