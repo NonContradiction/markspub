@@ -80,7 +80,8 @@ def generate_puzzle():
     
     return {
         "prompt": f"{pronoun} {beingverb} {df.iloc[ourchoice]['Question']}?",
-        "answer": df.iloc[ourchoice]['Answer']
+        "answer": df.iloc[ourchoice]['Answer'], 
+        "tally": df.at[ourchoice, 'Tally']
     }
 
 # Initialize session state
@@ -96,7 +97,7 @@ st.markdown(f"🔍 **Question:** {st.session_state.puzzle['prompt']}")
 answer_placeholder = st.empty()
 
 if st.session_state.show_answer:
-    answer_placeholder.markdown(f"✅ **Answer:** {st.session_state.puzzle['answer']}")
+    answer_placeholder.markdown(f"✅ **Answer:** {st.session_state.puzzle['answer']} and tally {tally}")
 else:
     # Reserve space for layout consistency
     answer_placeholder.markdown("<div style='height: 42px'></div>", unsafe_allow_html=True)
