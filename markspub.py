@@ -49,7 +49,7 @@ def generate_puzzle():
         pass
     # but only from the rows that we haven't seen yet
     try: 
-        filtereddf = filtereddf[filtereddf['Tally']== min(df['Tally'])]
+        filtereddf = filtereddf[filtereddf['Tally']== min(filtereddf['Tally'])]
     except UnboundLocalError:
         pass
                
