@@ -99,7 +99,7 @@ st.markdown(f"🔍 **Question:** {st.session_state.puzzle['prompt']}")
 answer_placeholder = st.empty()
 
 if st.session_state.show_answer:
-    answer_placeholder.markdown(f"✅ **Answer:** {st.session_state.puzzle['answer']} and tally {st.session_state.puzzle['tally']}")
+    answer_placeholder.markdown(f"✅ **Answer:** {st.session_state.puzzle['answer']}")
 else:
     # Reserve space for layout consistency
     answer_placeholder.markdown("<div style='height: 42px'></div>", unsafe_allow_html=True)
