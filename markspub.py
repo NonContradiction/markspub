@@ -21,7 +21,7 @@ st.markdown(f"We've got {df.shape[0]} total different trivia questions.")
 st.write("Select one or more options for the type of questions you want included:")
 
 options = ["Discrete Facts", "Vocab Refreshers", "Summary Lists", 
-           "Intersections", "Pavlovs", "Deep Cuts"]
+           "Intersections", "Pavlovs", "Deep Cuts", "Factoid"]
 
 # but only from the rows that we haven't seen yet
 #filtereddf = df[df['Tally']== min(df['Tally'])]
@@ -120,3 +120,4 @@ st.markdown("---")  # Optional horizontal rule
 
 st.markdown("ℹ️ You may need to double-click the button the first time. If you're on a computer, you should be able to use the enter/return key instead of the GUI (after clicking on it once).")
 st.markdown("𓂀𓋹𓁈𓃠𓆃☥𓆣")
+
